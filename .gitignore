@@ -4,8 +4,6 @@ __pycache__/
 venv/
 .env
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
 
 # Model weights 
 *.bin
