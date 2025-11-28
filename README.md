@@ -4,9 +4,19 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-> **A production-grade LLM inference optimization engine that achieves 2-3× speedup through speculative decoding—built from scratch in PyTorch.**
+> **A LLM inference optimization engine that achieves 2-3× speedup through speculative decoding—built from scratch in PyTorch.**
 
 Unlike black-box libraries (`vLLM`, `TensorRT-LLM`), this project implements the complete **speculative sampling algorithm** manually: draft token generation, parallel verification, and rejection sampling with proper probability distribution matching.
+
+---
+
+## What This Is (30-Second Pitch)
+
+**The Problem:** LLMs generate text slowly—one token at a time, loading billions of parameters for each word.
+
+**My Solution:** Use a tiny model to guess 4 tokens, then verify all 4 in parallel with the big model.
+
+**The Result:** **2.83× faster inference** with **zero quality loss** (mathematically proven).
 
 ---
 
