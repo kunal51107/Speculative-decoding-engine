@@ -390,7 +390,7 @@ git push origin feature/your-feature
 ##  Author
 
 **Kunal**  
-First Year CSE (AI) Student  
+CSE (AI) Student  
 
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/kunal51107)
 [![Email](https://img.shields.io/badge/Email-Contact-red?logo=gmail)](mailto:kunalchatla@gmail.com)
