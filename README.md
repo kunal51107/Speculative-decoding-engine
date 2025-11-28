@@ -74,7 +74,7 @@ If rejected, resample from adjusted distribution:
 
 $$P'(x) = \text{normalize}\left(\max(0, P_{\text{target}}(x) - P_{\text{draft}}(x))\right)$$
 
-This ensures the final output distribution **exactly matches** standard autoregressive sampling—no quality degradation!
+This ensures the final output distribution **exactly matches** standard autoregressive sampling no quality degradation!
 
 ---
 
