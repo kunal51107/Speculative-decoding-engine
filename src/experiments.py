@@ -29,9 +29,6 @@ def run_gamma_experiment():
         # Run the engine
         start_time = time.time()
         
-        # We don't print the text output here, just the stats
-        # We suppress the internal prints of the engine by not capturing them, 
-        # but the engine prints to stdout. That's fine for now.
         _ = engine.generate(prompt, max_new_tokens=max_tokens, gamma=gamma)
         
         end_time = time.time()
@@ -40,7 +37,6 @@ def run_gamma_experiment():
         total_time = end_time - start_time
         speed = max_tokens / total_time
         
-        # Get Acceptance Rate from the metrics we added
         acc_rate = engine.metrics['acceptance_rate'] * 100
         
         speeds.append(speed)
@@ -51,7 +47,7 @@ def run_gamma_experiment():
     print("-" * 50)
     print("✅ Experiment Complete. Generating Graph...")
 
-    # --- PLOTTING THE DATA ---
+    # graph
     plt.figure(figsize=(10, 5))
 
     # Subplot 1: Speed vs Gamma
